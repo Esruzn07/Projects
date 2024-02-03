@@ -49,6 +49,7 @@
   .buttons-container {
    display: flex;
    flex-direction: column;
+   gap: 10px;
    flex-wrap: nowrap;
    justify-content: space-around;
    align-items: stretch;
@@ -57,21 +58,28 @@
 
   .btn {
     border-radius: 5px;
-    margin-bottom: 5px;
+    /* Don't add margin bottom to generic button class, you may not need it everywhere.
+    margin-bottom: 5px; */
     text-align: center;
     text-decoration: none;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .btn google {
+  .google {
     background-color: var(--color-base);
+    color: var(--color-dark);
   }
 
-  .btn github {
+  .github {
+    color: #fff;
     background-color: var(--color-dark);
   }
 
-  .btn facebook {
+  .facebook {
+    color: #fff;
     background-color: var(--color-primary);
   }
   
